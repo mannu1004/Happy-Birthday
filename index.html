@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.js" />
+    <style>
+      video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+      <source src="./video/loginbg.mp4" type="video/mp4" />
+      <script  src="login.js" ></script>
+    </video>
+    <div
+      style="
+        height: 63vh;
+        width: 60vh;
+        background-color: #fafafa;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        border-radius: 15px;
+        filter: drop-shadow(2px 4px 8px #585858);
+
+        display: block;
+      "
+      class="loginbox"
+    >
+      <h1
+        class="logintxt"
+        style="
+          text-align: center;
+          padding: 5px;
+          font-family: lobster;
+          font-size: 40px;
+          padding-bottom: 4rem;
+          filter: drop-shadow(2px 4px 8px #585858);
+        "
+      >
+        Login
+      </h1>
+      <form  onsubmit="logIn(); return false;">
+       
+      <input
+        type="text"
+        placeholder="Enter Username"
+        class="username"
+        id="username"
+        name="username"
+        style="
+          height: 3rem;
+          width: 90%;
+          position: absolute;
+          margin-left: 25px;
+          border-radius: 8px;
+          border: lightgray 1px solid;
+          
+        "
+        required
+      />
+      <input
+        type="password"
+        placeholder="Enter password"
+        class="password"
+        id="password"
+        name="password"
+        style="
+          height: 3rem;
+          width: 90%;
+          position: absolute;
+          margin-left: 25px;
+          margin-top: 4rem;
+          border-radius: 8px;
+          border: transparent;
+          border: lightgrey 1px solid;
+        "
+        required
+      />
+      
+        <button id="submit"
+          class="loginbtn"
+          type="submit"
+
+         
+          style="
+            background-color: #ea4c46;
+            justify-content: center;
+            width: 6rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+              sans-serif;
+            font-weight: bold;
+            margin-top: 9rem;
+            border: transparent;
+            height: 2rem;
+            border-radius: 8px;
+            color: white;
+            margin-left: 40%;
+            font-size: 14px;
+            cursor: pointer;
+          "
+         
+        >
+          LogIn
+        </button>
+      </form>
+      <!--hintbox-->
+      <div
+        class="hintbox"
+        style="
+          width: auto;
+          height: 6.5rem;
+          background-color: lightpink;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-top: 2rem;
+          border-radius: 8px;
+          text-align: center;
+          font-family: sans-serif;
+          font-weight: bold;
+          padding-top: 1rem;
+          color: white;
+        "
+      >
+        <p>Hint!!</p>
+        <p>Username:DD/MM/YYYY</p>
+        <p>Password:Includes letters and numbers!!<br>Letters:Common name of your family!<br>Numbers:You can guess it!</p>
+      </div>
+    </div>
+  </body>
+</html>
